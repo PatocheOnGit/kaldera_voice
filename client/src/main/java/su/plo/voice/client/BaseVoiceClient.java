@@ -108,7 +108,7 @@ public abstract class BaseVoiceClient extends BaseVoice implements PlasmoVoiceCl
         ClientAddonsLoader.INSTANCE.setAddonManager(getAddonManager());
     }
 
-    @EventSubscribe
+    // Kaldera Voice: no update check, the Kaldera launcher delivers updates.
     public void onUdpConnected(@NotNull UdpClientConnectedEvent event) {
         if (this.updatesChecked) return;
         this.updatesChecked = true;
@@ -146,7 +146,8 @@ public abstract class BaseVoiceClient extends BaseVoice implements PlasmoVoiceCl
 
         loadConfig();
 
-        if (!config.getDisableCrowdin().value()) {
+        // Kaldera Voice: translations ship with the mod, nothing is downloaded.
+        if (false && !config.getDisableCrowdin().value()) {
             PlasmoCrowdinMod.INSTANCE.downloadTranslations(
                     new File(getConfigFolder(), PlasmoCrowdinMod.INSTANCE.getFolderName())
             );

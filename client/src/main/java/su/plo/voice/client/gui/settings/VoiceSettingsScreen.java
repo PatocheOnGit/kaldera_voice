@@ -305,13 +305,13 @@ public final class VoiceSettingsScreen extends GuiScreen implements GuiWidgetLis
 
         McTextComponent title = McTextComponent.translatable(
                 "gui.plasmovoice.title",
-                McTextComponent.literal("Plasmo Voice"),
+                McTextComponent.literal("Kaldera Voice"),
                 McTextComponent.literal(StringsKt.substringBefore(version.toString(), "+", version.toString()))
                         .withStyle(versionColor)
         );
 
         if (LanguageUtil.getOrDefault("gui.plasmovoice.title").split("%").length != 3) {
-            return McTextComponent.literal(String.format("Plasmo Voice %s%s Settings", versionColor, version));
+            return McTextComponent.literal(String.format("Kaldera Voice %s%s Settings", versionColor, version));
         }
 
         return title;

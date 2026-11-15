@@ -30,8 +30,8 @@ import su.plo.lib.mod.client.gui.widget.GuiWidgetTexture;
 
 public class TextFieldWidget extends GuiAbstractWidget {
 
-    private static final Color CURSOR_COLOR = new Color(0xD0D0D0);
-    private static final Color HIGHLIGHT_COLOR = new Color(0x4B4BFF);
+    private static final Color CURSOR_COLOR = new Color(0xF4EDE6);
+    private static final Color HIGHLIGHT_COLOR = new Color(0xE2540C);
 
     @Setter
     @Nullable

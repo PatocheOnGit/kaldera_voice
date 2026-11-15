@@ -304,3 +304,6 @@ tasks {
         }
     }
 }
+
+// Kaldera Voice: no Crowdin download (deterministic builds, English and Kaldera's French only).
+tasks.matching { it.name == "crowdinDownload" }.configureEach { enabled = false }

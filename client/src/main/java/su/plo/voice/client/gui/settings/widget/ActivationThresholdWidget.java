@@ -29,9 +29,9 @@ public final class ActivationThresholdWidget extends AbstractSlider implements U
 
     private static final ResourceLocation SLIDER_TEXTURE = ResourceLocationUtil.parse("textures/gui/sprites/widget/slider.png");
 
-    private static final Color LEVEL_HIGH_COLOR = new Color(0xFF0000);
-    private static final Color LEVEL_MEDIUM_COLOR = new Color(0xFFFF00);
-    private static final Color LEVEL_LOW_COLOR = new Color(0x00FF00);
+    private static final Color LEVEL_HIGH_COLOR = new Color(0xC42340);
+    private static final Color LEVEL_MEDIUM_COLOR = new Color(0xE8A33D);
+    private static final Color LEVEL_LOW_COLOR = new Color(0x4ADE80);
 
     private final DoubleConfigEntry entry;
     private final MicrophoneTestController controller;

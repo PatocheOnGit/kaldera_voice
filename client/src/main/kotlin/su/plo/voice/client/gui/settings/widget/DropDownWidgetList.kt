@@ -138,7 +138,7 @@ class DropDownWidgetList(
         private const val ELEMENT_HEIGHT = 17
         private const val VISIBLE_ELEMENTS = 5
 
-        private val frameColor = Color(0x464646)
-        private val hoverColor = Color(0x323232)
+        private val frameColor = Color(0x3A3A43)
+        private val hoverColor = Color(0x2A2A31)
     }
 }

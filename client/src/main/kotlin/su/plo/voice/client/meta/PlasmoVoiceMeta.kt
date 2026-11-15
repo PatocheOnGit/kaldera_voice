@@ -63,7 +63,7 @@ data class PlasmoVoiceMeta(
         private val cacheType = object : TypeToken<Map<String, PlasmoVoiceMeta>>() {}.type
 
         fun fetch(languageName: String) {
-            CoroutineScopes.DefaultSupervisor.launch { fetchOrLoadSync(languageName) }
+            // Kaldera Voice: no request to plasmovoice.com, the built-in credits are used.
         }
 
         private fun fetchOrLoadSync(languageName: String) {

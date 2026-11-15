@@ -307,6 +307,6 @@ open class ScrollContainer(
         const val SCROLLBAR_PADDING = 4
         const val MIN_THUMB_HEIGHT = 32
 
-        val THUMB_COLOR = Color(0xC0C0C0)
+        val THUMB_COLOR = Color(0xFF8A45)
     }
 }

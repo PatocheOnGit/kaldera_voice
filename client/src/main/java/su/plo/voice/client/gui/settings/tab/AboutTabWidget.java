@@ -31,7 +31,7 @@ import net.minecraft.client.Minecraft;
 
 public final class AboutTabWidget extends TabWidget {
 
-    private static final Color GRAY_TEXT_COLOR = new Color(0xAAAAAA);
+    private static final Color GRAY_TEXT_COLOR = new Color(0x8D8780);
 
     public AboutTabWidget(@NotNull VoiceSettingsScreen parent,
                           @NotNull PlasmoVoiceClient voiceClient,
@@ -49,6 +49,11 @@ public final class AboutTabWidget extends TabWidget {
                 .forEach(developer -> developers.add(new DeveloperCard(developer)));
 
         CompositeColumnWidget linkRows = addCategory(links());
+        // Kaldera Voice: the fork and its source code (LGPL-3.0), then the original project.
+        linkRows.add(new CompositeRowWidget(
+                ELEMENT_GAP,
+                linkButton("Kaldera Voice", "https://github.com/PatocheOnGit/kaldera_voice")
+        ));
         linkRows.add(new CompositeRowWidget(
                 ELEMENT_GAP,
                 linkButton("Github", "https://github.com/plasmoapp/plasmo-voice"),

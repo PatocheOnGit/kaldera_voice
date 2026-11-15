@@ -1,17 +1,17 @@
 modLoader="javafml"
 loaderVersion="[3,)"
 license="LGPL-3.0"
-issueTrackerURL="https://github.com/plasmoapp/plasmo-voice/issues"
+issueTrackerURL="https://github.com/PatocheOnGit/kaldera_voice/issues"
 [[mixins]]
 config="${mixins}"
 [[mods]]
 modId="plasmovoice"
 version="${version}"
-displayName="Plasmo Voice"
-displayURL="https://github.com/plasmoapp/plasmo-voice"
+displayName="Kaldera Voice"
+displayURL="https://github.com/PatocheOnGit/kaldera_voice"
 ${iconKey}="icon.png"
-authors="Apehum"
-description="A proximity voice chat mod with audio positioning and lots of features"
+authors="Apehum and the Plasmo team (Plasmo Voice), Kaldera (fork)"
+description="Kaldera's proximity voice chat. A modified version of Plasmo Voice by Plasmo, under the LGPL-3.0: https://github.com/plasmoapp/plasmo-voice"
 [[dependencies.plasmovoice]]
     modId="neoforge"
     type="required"
